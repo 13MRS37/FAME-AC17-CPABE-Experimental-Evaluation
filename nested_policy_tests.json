@@ -1,0 +1,445 @@
+[
+  {
+    "name": "Six-way AND - all attributes",
+    "policy": "A AND B AND C AND D AND E AND F",
+    "attributes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Six-way AND - missing F",
+    "policy": "A AND B AND C AND D AND E AND F",
+    "attributes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Six-way OR - attribute E",
+    "policy": "A OR B OR C OR D OR E OR F",
+    "attributes": [
+      "E"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Duplicate attribute - rejected by parser",
+    "policy": "A OR (B AND A)",
+    "attributes": [
+      "A",
+      "B"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Duplicate attribute - AND",
+    "policy": "A AND A",
+    "attributes": [
+      "A"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Duplicate attribute - OR",
+    "policy": "A OR A",
+    "attributes": [
+      "A"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Six-way OR - no matching attribute",
+    "policy": "A OR B OR C OR D OR E OR F",
+    "attributes": [
+      "G"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Nested policy - satisfied",
+    "policy": "A AND (B OR C) AND (D OR E) AND F",
+    "attributes": [
+      "A",
+      "C",
+      "D",
+      "F"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Nested policy - missing D/E",
+    "policy": "A AND (B OR C) AND (D OR E) AND F",
+    "attributes": [
+      "A",
+      "C",
+      "F"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Three alternative branches - satisfied",
+    "policy": "(A AND B) OR (C AND D) OR (E AND F)",
+    "attributes": [
+      "C",
+      "D"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Three alternative branches - incomplete branch",
+    "policy": "(A AND B) OR (C AND D) OR (E AND F)",
+    "attributes": [
+      "A",
+      "C"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Three OR groups - satisfied",
+    "policy": "(A OR B) AND (C OR D) AND (E OR F)",
+    "attributes": [
+      "A",
+      "D",
+      "F"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Three OR groups - missing third group",
+    "policy": "(A OR B) AND (C OR D) AND (E OR F)",
+    "attributes": [
+      "A",
+      "B",
+      "C"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Deep nested policy - all requirements satisfied",
+    "policy": "((A AND B) OR C) AND (D OR (E AND F))",
+    "attributes": [
+      "A",
+      "B",
+      "E",
+      "F"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Deep nested policy - alternative branches satisfied",
+    "policy": "((A AND B) OR C) AND (D OR (E AND F))",
+    "attributes": [
+      "C",
+      "D"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Deep nested policy - first group missing",
+    "policy": "((A AND B) OR C) AND (D OR (E AND F))",
+    "attributes": [
+      "A",
+      "D"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Deep nested policy - second group incomplete",
+    "policy": "((A AND B) OR C) AND (D OR (E AND F))",
+    "attributes": [
+      "A",
+      "B",
+      "E"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Three AND branches - first branch satisfied",
+    "policy": "(A AND B AND C) OR (D AND E) OR (F AND G)",
+    "attributes": [
+      "A",
+      "B",
+      "C"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Three AND branches - second branch satisfied",
+    "policy": "(A AND B AND C) OR (D AND E) OR (F AND G)",
+    "attributes": [
+      "D",
+      "E"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Three AND branches - third branch satisfied",
+    "policy": "(A AND B AND C) OR (D AND E) OR (F AND G)",
+    "attributes": [
+      "F",
+      "G"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Three AND branches - mixed incomplete branches",
+    "policy": "(A AND B AND C) OR (D AND E) OR (F AND G)",
+    "attributes": [
+      "A",
+      "D",
+      "F"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Three AND branches - one missing attribute",
+    "policy": "(A AND B AND C) OR (D AND E) OR (F AND G)",
+    "attributes": [
+      "A",
+      "B",
+      "D",
+      "E",
+      "F"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Four OR groups - one attribute per group",
+    "policy": "(A OR B) AND (C OR D) AND (E OR F) AND (G OR H)",
+    "attributes": [
+      "A",
+      "D",
+      "E",
+      "H"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Four OR groups - multiple alternatives",
+    "policy": "(A OR B) AND (C OR D) AND (E OR F) AND (G OR H)",
+    "attributes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "F",
+      "G"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Four OR groups - fourth group missing",
+    "policy": "(A OR B) AND (C OR D) AND (E OR F) AND (G OR H)",
+    "attributes": [
+      "A",
+      "C",
+      "E"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Four OR groups - third group missing",
+    "policy": "(A OR B) AND (C OR D) AND (E OR F) AND (G OR H)",
+    "attributes": [
+      "B",
+      "D",
+      "G"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Complex nested policy - satisfied through left branches",
+    "policy": "((A OR B) AND (C OR (D AND E))) OR ((F AND G) AND (H OR I))",
+    "attributes": [
+      "B",
+      "C"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Complex nested policy - satisfied through right branch",
+    "policy": "((A OR B) AND (C OR (D AND E))) OR ((F AND G) AND (H OR I))",
+    "attributes": [
+      "F",
+      "G",
+      "I"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Complex nested policy - incomplete left branch",
+    "policy": "((A OR B) AND (C OR (D AND E))) OR ((F AND G) AND (H OR I))",
+    "attributes": [
+      "A",
+      "D"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Complex nested policy - incomplete right branch",
+    "policy": "((A OR B) AND (C OR (D AND E))) OR ((F AND G) AND (H OR I))",
+    "attributes": [
+      "F",
+      "H"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Large policy - first complex branch",
+    "policy": "((A AND B) OR (C AND D)) AND (E OR F) OR ((G AND H) OR (I AND J))",
+    "attributes": [
+      "A",
+      "B",
+      "E"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Large policy - second complex branch",
+    "policy": "((A AND B) OR (C AND D)) AND (E OR F) OR ((G AND H) OR (I AND J))",
+    "attributes": [
+      "G",
+      "H"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Large policy - third alternative within first group",
+    "policy": "((A AND B) OR (C AND D)) AND (E OR F) OR ((G AND H) OR (I AND J))",
+    "attributes": [
+      "C",
+      "D",
+      "F"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Large policy - no complete branch",
+    "policy": "((A AND B) OR (C AND D)) AND (E OR F) OR ((G AND H) OR (I AND J))",
+    "attributes": [
+      "A",
+      "C",
+      "E",
+      "G"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Stress 1 - nested AND/OR, satisfied",
+    "policy": "(((A AND B) OR (C AND D)) AND (E OR F)) AND (G OR H)",
+    "attributes": [
+      "A",
+      "B",
+      "E",
+      "G"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Stress 2 - nested AND/OR, final group missing",
+    "policy": "(((A AND B) OR (C AND D)) AND (E OR F)) AND (G OR H)",
+    "attributes": [
+      "A",
+      "B",
+      "E"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Stress 3 - nested alternative branches, left satisfied",
+    "policy": "((A AND (B OR C)) OR (D AND (E OR F))) AND (G OR (H AND I))",
+    "attributes": [
+      "A",
+      "C",
+      "G"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Stress 4 - nested alternative branches, right satisfied",
+    "policy": "((A AND (B OR C)) OR (D AND (E OR F))) AND (G OR (H AND I))",
+    "attributes": [
+      "D",
+      "F",
+      "H",
+      "I"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Stress 5 - both major branches incomplete",
+    "policy": "((A AND (B OR C)) OR (D AND (E OR F))) AND (G OR (H AND I))",
+    "attributes": [
+      "D",
+      "E",
+      "H"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Stress 6 - deep left branch satisfied",
+    "policy": "(((A AND B) OR (C AND D)) AND (E OR (F AND G))) OR ((H AND (I OR J)) AND (K OR (L AND M)))",
+    "attributes": [
+      "A",
+      "B",
+      "E"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Stress 7 - deep right branch satisfied",
+    "policy": "(((A AND B) OR (C AND D)) AND (E OR (F AND G))) OR ((H AND (I OR J)) AND (K OR (L AND M)))",
+    "attributes": [
+      "H",
+      "J",
+      "K"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Stress 8 - neither deep branch satisfied",
+    "policy": "(((A AND B) OR (C AND D)) AND (E OR (F AND G))) OR ((H AND (I OR J)) AND (K OR (L AND M)))",
+    "attributes": [
+      "A",
+      "C",
+      "E",
+      "H",
+      "I"
+    ],
+    "expected": false
+  },
+  {
+    "name": "Stress 9 - nested AND/OR, alternative satisfied",
+    "policy": "((A OR B) AND ((C AND D) OR (E AND (F OR G)))) AND (H OR (I AND J))",
+    "attributes": [
+      "B",
+      "E",
+      "F",
+      "I",
+      "J"
+    ],
+    "expected": true
+  },
+  {
+    "name": "Stress 10 - nested AND/OR, inner requirement missing",
+    "policy": "((A OR B) AND ((C AND D) OR (E AND (F OR G)))) AND (H OR (I AND J))",
+    "attributes": [
+      "A",
+      "C",
+      "E",
+      "H",
+      "I"
+    ],
+    "expected": false
+  }
+]

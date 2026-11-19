@@ -1,0 +1,441 @@
+Test_ID,Test_Name,Policy,User_Attributes,Expected_Success,Run,Setup_ms,KeyGen_ms,Encrypt_ms,Decrypt_ms,Total_ms,Outcome,Correct,Error
+1,Six-way AND - all attributes,A and B and C and D and E and F,A;B;C;D;E;F,True,1,20.172774,49.192659,39.090038,20.404120,128.859591,DECRYPT_SUCCESS,True,
+1,Six-way AND - all attributes,A and B and C and D and E and F,A;B;C;D;E;F,True,2,20.285742,50.191913,38.912059,18.920613,128.310327,DECRYPT_SUCCESS,True,
+1,Six-way AND - all attributes,A and B and C and D and E and F,A;B;C;D;E;F,True,3,20.182243,50.942011,39.694940,20.388569,131.207763,DECRYPT_SUCCESS,True,
+1,Six-way AND - all attributes,A and B and C and D and E and F,A;B;C;D;E;F,True,4,20.211813,50.205961,39.746139,19.126560,129.290473,DECRYPT_SUCCESS,True,
+1,Six-way AND - all attributes,A and B and C and D and E and F,A;B;C;D;E;F,True,5,20.412380,49.880697,40.251247,20.539238,131.083562,DECRYPT_SUCCESS,True,
+1,Six-way AND - all attributes,A and B and C and D and E and F,A;B;C;D;E;F,True,6,19.960697,49.373586,38.710073,19.197699,127.242055,DECRYPT_SUCCESS,True,
+1,Six-way AND - all attributes,A and B and C and D and E and F,A;B;C;D;E;F,True,7,20.343001,50.090876,39.432861,19.184619,129.051357,DECRYPT_SUCCESS,True,
+1,Six-way AND - all attributes,A and B and C and D and E and F,A;B;C;D;E;F,True,8,20.000397,52.613013,41.384340,19.637882,133.635632,DECRYPT_SUCCESS,True,
+1,Six-way AND - all attributes,A and B and C and D and E and F,A;B;C;D;E;F,True,9,19.903157,49.311235,39.079557,19.524364,127.818313,DECRYPT_SUCCESS,True,
+1,Six-way AND - all attributes,A and B and C and D and E and F,A;B;C;D;E;F,True,10,19.987945,49.809298,39.583319,19.514513,128.895075,DECRYPT_SUCCESS,True,
+2,Six-way AND - missing F,A and B and C and D and E and F,A;B;C;D;E,False,1,19.894918,44.310114,40.020051,0.737388,104.962471,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+2,Six-way AND - missing F,A and B and C and D and E and F,A;B;C;D;E,False,2,21.613181,44.813895,40.534903,0.745738,107.707717,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+2,Six-way AND - missing F,A and B and C and D and E and F,A;B;C;D;E,False,3,20.826404,43.934920,38.613504,0.624030,103.998858,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+2,Six-way AND - missing F,A and B and C and D and E and F,A;B;C;D;E,False,4,20.823443,44.989672,39.427031,0.684569,105.924715,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+2,Six-way AND - missing F,A and B and C and D and E and F,A;B;C;D;E,False,5,20.181532,44.942945,40.452415,0.661609,106.238501,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+2,Six-way AND - missing F,A and B and C and D and E and F,A;B;C;D;E,False,6,20.044285,44.258074,39.646667,0.660830,104.609856,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+2,Six-way AND - missing F,A and B and C and D and E and F,A;B;C;D;E,False,7,20.663014,46.398972,40.155439,0.749838,107.967263,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+2,Six-way AND - missing F,A and B and C and D and E and F,A;B;C;D;E,False,8,20.390971,44.858475,38.724632,0.500532,104.474610,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+2,Six-way AND - missing F,A and B and C and D and E and F,A;B;C;D;E,False,9,20.722162,44.329745,38.957708,1.998679,106.008294,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+2,Six-way AND - missing F,A and B and C and D and E and F,A;B;C;D;E,False,10,20.102844,44.934084,40.071291,0.528191,105.636410,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+3,Six-way OR - attribute E,A or B or C or D or E or F,E,True,1,19.744900,22.958280,37.393362,18.982782,99.079324,DECRYPT_SUCCESS,True,
+3,Six-way OR - attribute E,A or B or C or D or E or F,E,True,2,20.178873,23.838394,38.900099,20.162293,103.079659,DECRYPT_SUCCESS,True,
+3,Six-way OR - attribute E,A or B or C or D or E or F,E,True,3,20.593288,23.258335,37.599420,19.004742,100.455785,DECRYPT_SUCCESS,True,
+3,Six-way OR - attribute E,A or B or C or D or E or F,E,True,4,20.035285,23.274233,38.562304,20.095243,101.967065,DECRYPT_SUCCESS,True,
+3,Six-way OR - attribute E,A or B or C or D or E or F,E,True,5,19.920488,23.073167,37.188147,21.620499,101.802301,DECRYPT_SUCCESS,True,
+3,Six-way OR - attribute E,A or B or C or D or E or F,E,True,6,22.113902,24.766033,38.702621,19.238128,104.820684,DECRYPT_SUCCESS,True,
+3,Six-way OR - attribute E,A or B or C or D or E or F,E,True,7,20.963031,24.851609,38.903219,19.432284,104.150143,DECRYPT_SUCCESS,True,
+3,Six-way OR - attribute E,A or B or C or D or E or F,E,True,8,20.956902,24.068381,39.078896,20.870481,104.974660,DECRYPT_SUCCESS,True,
+3,Six-way OR - attribute E,A or B or C or D or E or F,E,True,9,21.066599,24.119202,39.506919,19.848399,104.541119,DECRYPT_SUCCESS,True,
+3,Six-way OR - attribute E,A or B or C or D or E or F,E,True,10,21.169337,23.606731,38.321097,19.775529,102.872694,DECRYPT_SUCCESS,True,
+4,Duplicate attribute - rejected by parser,A or (B and A),A;B,True,1,19.913057,28.386775,28.256488,19.945147,96.501467,DECRYPT_SUCCESS,True,
+4,Duplicate attribute - rejected by parser,A or (B and A),A;B,True,2,20.074754,28.862988,26.974626,19.362185,95.274553,DECRYPT_SUCCESS,True,
+4,Duplicate attribute - rejected by parser,A or (B and A),A;B,True,3,21.451904,29.857261,28.225737,20.259432,99.794334,DECRYPT_SUCCESS,True,
+4,Duplicate attribute - rejected by parser,A or (B and A),A;B,True,4,20.246822,29.000534,27.857542,21.806268,98.911166,DECRYPT_SUCCESS,True,
+4,Duplicate attribute - rejected by parser,A or (B and A),A;B,True,5,20.266879,29.518977,28.097970,19.163769,97.047595,DECRYPT_SUCCESS,True,
+4,Duplicate attribute - rejected by parser,A or (B and A),A;B,True,6,20.005605,28.557251,27.283011,20.334731,96.180598,DECRYPT_SUCCESS,True,
+4,Duplicate attribute - rejected by parser,A or (B and A),A;B,True,7,21.204298,28.324075,26.966126,19.058692,95.553191,DECRYPT_SUCCESS,True,
+4,Duplicate attribute - rejected by parser,A or (B and A),A;B,True,8,21.035450,29.644004,27.398259,21.096231,99.173944,DECRYPT_SUCCESS,True,
+4,Duplicate attribute - rejected by parser,A or (B and A),A;B,True,9,21.306745,29.309770,27.752055,19.227607,97.596177,DECRYPT_SUCCESS,True,
+4,Duplicate attribute - rejected by parser,A or (B and A),A;B,True,10,21.248927,29.548495,27.598426,20.683106,99.078954,DECRYPT_SUCCESS,True,
+5,Duplicate attribute - AND,A and A,A,True,1,20.862122,24.489785,23.781977,19.899177,89.033061,DECRYPT_SUCCESS,True,
+5,Duplicate attribute - AND,A and A,A,True,2,20.551048,23.825335,25.794426,19.626961,89.797770,DECRYPT_SUCCESS,True,
+5,Duplicate attribute - AND,A and A,A,True,3,20.704574,23.808098,23.781725,19.391206,87.685603,DECRYPT_SUCCESS,True,
+5,Duplicate attribute - AND,A and A,A,True,4,20.943782,23.875955,23.793275,19.097101,87.710113,DECRYPT_SUCCESS,True,
+5,Duplicate attribute - AND,A and A,A,True,5,20.334862,23.450470,23.191477,19.159240,86.136049,DECRYPT_SUCCESS,True,
+5,Duplicate attribute - AND,A and A,A,True,6,20.494266,23.522773,23.561579,19.463015,87.041633,DECRYPT_SUCCESS,True,
+5,Duplicate attribute - AND,A and A,A,True,7,20.852861,24.081531,24.008974,19.603201,88.546567,DECRYPT_SUCCESS,True,
+5,Duplicate attribute - AND,A and A,A,True,8,20.777094,24.040573,23.717778,19.718449,88.253894,DECRYPT_SUCCESS,True,
+5,Duplicate attribute - AND,A and A,A,True,9,19.995615,23.522992,24.661800,19.567814,87.748221,DECRYPT_SUCCESS,True,
+5,Duplicate attribute - AND,A and A,A,True,10,20.547008,23.528540,23.538092,19.572482,87.186122,DECRYPT_SUCCESS,True,
+6,Duplicate attribute - OR,A or A,A,True,1,20.588335,23.925786,23.504561,20.502489,88.521171,DECRYPT_SUCCESS,True,
+6,Duplicate attribute - OR,A or A,A,True,2,20.466288,24.432516,23.585520,19.161219,87.645543,DECRYPT_SUCCESS,True,
+6,Duplicate attribute - OR,A or A,A,True,3,20.724973,23.726427,24.175871,19.951946,88.579217,DECRYPT_SUCCESS,True,
+6,Duplicate attribute - OR,A or A,A,True,4,20.892282,24.287778,23.754499,19.266527,88.201086,DECRYPT_SUCCESS,True,
+6,Duplicate attribute - OR,A or A,A,True,5,20.717973,24.661664,23.713558,19.902697,88.995892,DECRYPT_SUCCESS,True,
+6,Duplicate attribute - OR,A or A,A,True,6,20.026666,23.465511,24.094732,19.498323,87.085232,DECRYPT_SUCCESS,True,
+6,Duplicate attribute - OR,A or A,A,True,7,20.109164,23.312653,23.624199,19.996388,87.042404,DECRYPT_SUCCESS,True,
+6,Duplicate attribute - OR,A or A,A,True,8,20.408318,23.592640,24.032252,19.869028,87.902238,DECRYPT_SUCCESS,True,
+6,Duplicate attribute - OR,A or A,A,True,9,20.538898,23.764045,23.446362,19.853628,87.602933,DECRYPT_SUCCESS,True,
+6,Duplicate attribute - OR,A or A,A,True,10,20.176034,23.581411,23.426171,19.634922,86.818538,DECRYPT_SUCCESS,True,
+7,Six-way OR - no matching attribute,A or B or C or D or E or F,G,False,1,20.196122,23.436742,38.226529,0.744968,82.604361,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+7,Six-way OR - no matching attribute,A or B or C or D or E or F,G,False,2,20.070795,23.473012,38.706033,0.759868,83.009708,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+7,Six-way OR - no matching attribute,A or B or C or D or E or F,G,False,3,20.453239,24.019003,38.474705,0.673499,83.620446,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+7,Six-way OR - no matching attribute,A or B or C or D or E or F,G,False,4,20.290012,23.497511,39.284842,0.957675,84.030040,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+7,Six-way OR - no matching attribute,A or B or C or D or E or F,G,False,5,20.501029,23.864254,39.306212,0.736469,84.407964,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+7,Six-way OR - no matching attribute,A or B or C or D or E or F,G,False,6,20.258032,23.968764,38.624163,0.728448,83.579407,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+7,Six-way OR - no matching attribute,A or B or C or D or E or F,G,False,7,20.169884,23.558109,38.467487,0.728498,82.923978,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+7,Six-way OR - no matching attribute,A or B or C or D or E or F,G,False,8,20.350120,23.844825,38.430447,0.687319,83.312711,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+7,Six-way OR - no matching attribute,A or B or C or D or E or F,G,False,9,20.572747,23.581380,38.902778,0.567652,83.624557,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+7,Six-way OR - no matching attribute,A or B or C or D or E or F,G,False,10,20.681015,24.009312,38.555885,0.727749,83.973961,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+8,Nested policy - satisfied,A and (B or C) and (D or E) and F,A;C;D;F,True,1,20.240719,38.890924,37.845071,19.214126,116.190840,DECRYPT_SUCCESS,True,
+8,Nested policy - satisfied,A and (B or C) and (D or E) and F,A;C;D;F,True,2,20.413758,39.181420,38.383282,19.058368,117.036828,DECRYPT_SUCCESS,True,
+8,Nested policy - satisfied,A and (B or C) and (D or E) and F,A;C;D;F,True,3,20.932869,39.399346,38.529980,19.143438,118.005633,DECRYPT_SUCCESS,True,
+8,Nested policy - satisfied,A and (B or C) and (D or E) and F,A;C;D;F,True,4,20.048072,39.410486,39.461237,19.479830,118.399625,DECRYPT_SUCCESS,True,
+8,Nested policy - satisfied,A and (B or C) and (D or E) and F,A;C;D;F,True,5,20.261089,39.101900,38.935813,19.154585,117.453387,DECRYPT_SUCCESS,True,
+8,Nested policy - satisfied,A and (B or C) and (D or E) and F,A;C;D;F,True,6,20.151682,39.224380,38.979302,19.045089,117.400453,DECRYPT_SUCCESS,True,
+8,Nested policy - satisfied,A and (B or C) and (D or E) and F,A;C;D;F,True,7,19.974643,39.705432,39.317448,19.240915,118.238438,DECRYPT_SUCCESS,True,
+8,Nested policy - satisfied,A and (B or C) and (D or E) and F,A;C;D;F,True,8,20.163960,39.355926,39.689582,19.201667,118.411135,DECRYPT_SUCCESS,True,
+8,Nested policy - satisfied,A and (B or C) and (D or E) and F,A;C;D;F,True,9,20.045912,39.108761,38.473112,19.379932,117.007717,DECRYPT_SUCCESS,True,
+8,Nested policy - satisfied,A and (B or C) and (D or E) and F,A;C;D;F,True,10,20.109932,39.824429,38.893464,19.087728,117.915553,DECRYPT_SUCCESS,True,
+9,Nested policy - missing D/E,A and (B or C) and (D or E) and F,A;C;F,False,1,24.645370,34.044601,38.473401,0.747408,97.910780,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+9,Nested policy - missing D/E,A and (B or C) and (D or E) and F,A;C;F,False,2,20.372859,34.007380,38.861424,0.534352,93.776015,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+9,Nested policy - missing D/E,A and (B or C) and (D or E) and F,A;C;F,False,3,20.081282,34.086799,38.856187,0.565422,93.589690,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+9,Nested policy - missing D/E,A and (B or C) and (D or E) and F,A;C;F,False,4,20.412026,34.098179,39.518955,0.733209,94.762369,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+9,Nested policy - missing D/E,A and (B or C) and (D or E) and F,A;C;F,False,5,20.357858,33.977791,38.473391,0.577261,93.386301,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+9,Nested policy - missing D/E,A and (B or C) and (D or E) and F,A;C;F,False,6,20.626494,34.096539,38.806586,0.492492,94.022111,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+9,Nested policy - missing D/E,A and (B or C) and (D or E) and F,A;C;F,False,7,20.172602,33.927443,38.264054,0.486873,92.850972,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+9,Nested policy - missing D/E,A and (B or C) and (D or E) and F,A;C;F,False,8,20.097621,33.895394,38.441143,6.837641,99.271799,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+9,Nested policy - missing D/E,A and (B or C) and (D or E) and F,A;C;F,False,9,20.425846,34.801349,38.465182,0.529311,94.221688,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+9,Nested policy - missing D/E,A and (B or C) and (D or E) and F,A;C;F,False,10,20.274030,35.291710,39.395938,0.719209,95.680887,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+10,Three alternative branches - satisfied,(A and B) or (C and D) or (E and F),C;D,True,1,19.871707,28.607405,38.623280,19.420563,106.522955,DECRYPT_SUCCESS,True,
+10,Three alternative branches - satisfied,(A and B) or (C and D) or (E and F),C;D,True,2,20.388447,28.708496,38.995983,19.393341,107.486267,DECRYPT_SUCCESS,True,
+10,Three alternative branches - satisfied,(A and B) or (C and D) or (E and F),C;D,True,3,20.821501,28.609807,38.629608,19.278596,107.339512,DECRYPT_SUCCESS,True,
+10,Three alternative branches - satisfied,(A and B) or (C and D) or (E and F),C;D,True,4,20.060903,29.527751,39.990557,19.724117,109.303328,DECRYPT_SUCCESS,True,
+10,Three alternative branches - satisfied,(A and B) or (C and D) or (E and F),C;D,True,5,20.394058,30.102712,39.547274,19.661888,109.705932,DECRYPT_SUCCESS,True,
+10,Three alternative branches - satisfied,(A and B) or (C and D) or (E and F),C;D,True,6,20.423396,28.643546,39.577924,19.018839,107.663705,DECRYPT_SUCCESS,True,
+10,Three alternative branches - satisfied,(A and B) or (C and D) or (E and F),C;D,True,7,20.378696,29.365606,38.572241,19.216675,107.533218,DECRYPT_SUCCESS,True,
+10,Three alternative branches - satisfied,(A and B) or (C and D) or (E and F),C;D,True,8,20.421347,29.030270,39.926187,19.570752,108.948556,DECRYPT_SUCCESS,True,
+10,Three alternative branches - satisfied,(A and B) or (C and D) or (E and F),C;D,True,9,20.525583,29.214589,38.819586,19.546579,108.106337,DECRYPT_SUCCESS,True,
+10,Three alternative branches - satisfied,(A and B) or (C and D) or (E and F),C;D,True,10,20.102763,28.550498,39.330756,20.112381,108.096398,DECRYPT_SUCCESS,True,
+11,Three alternative branches - incomplete branch,(A and B) or (C and D) or (E and F),A;C,False,1,20.890918,29.753351,39.811099,0.665930,91.121298,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+11,Three alternative branches - incomplete branch,(A and B) or (C and D) or (E and F),A;C,False,2,21.035097,28.465469,39.182449,0.538971,89.221986,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+11,Three alternative branches - incomplete branch,(A and B) or (C and D) or (E and F),A;C,False,3,21.005176,29.549053,39.139271,0.573721,90.267221,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+11,Three alternative branches - incomplete branch,(A and B) or (C and D) or (E and F),A;C,False,4,20.881219,28.750397,38.982812,0.540142,89.154570,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+11,Three alternative branches - incomplete branch,(A and B) or (C and D) or (E and F),A;C,False,5,21.069156,30.654255,40.360203,0.726428,92.810042,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+11,Three alternative branches - incomplete branch,(A and B) or (C and D) or (E and F),A;C,False,6,21.470579,31.307556,41.109149,0.722729,94.610013,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+11,Three alternative branches - incomplete branch,(A and B) or (C and D) or (E and F),A;C,False,7,20.509025,28.740566,40.869051,0.726208,90.844850,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+11,Three alternative branches - incomplete branch,(A and B) or (C and D) or (E and F),A;C,False,8,21.365512,29.513444,38.962983,0.713899,90.555838,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+11,Three alternative branches - incomplete branch,(A and B) or (C and D) or (E and F),A;C,False,9,20.882658,29.352887,39.793879,0.881316,90.910740,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+11,Three alternative branches - incomplete branch,(A and B) or (C and D) or (E and F),A;C,False,10,20.219139,29.179308,40.025697,0.879366,90.303510,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+12,Three OR groups - satisfied,(A or B) and (C or D) and (E or F),A;D;F,True,1,21.297813,38.222235,49.636136,27.047170,136.203354,DECRYPT_SUCCESS,True,
+12,Three OR groups - satisfied,(A or B) and (C or D) and (E or F),A;D;F,True,2,22.723200,38.733348,58.127288,22.644992,142.228828,DECRYPT_SUCCESS,True,
+12,Three OR groups - satisfied,(A or B) and (C or D) and (E or F),A;D;F,True,3,20.896988,35.038507,40.403500,19.656179,115.995174,DECRYPT_SUCCESS,True,
+12,Three OR groups - satisfied,(A or B) and (C or D) and (E or F),A;D;F,True,4,20.237559,35.498848,39.508766,19.505211,114.750384,DECRYPT_SUCCESS,True,
+12,Three OR groups - satisfied,(A or B) and (C or D) and (E or F),A;D;F,True,5,22.009523,36.616189,39.938838,20.076332,118.640882,DECRYPT_SUCCESS,True,
+12,Three OR groups - satisfied,(A or B) and (C or D) and (E or F),A;D;F,True,6,20.795741,34.672061,39.199070,19.607429,114.274301,DECRYPT_SUCCESS,True,
+12,Three OR groups - satisfied,(A or B) and (C or D) and (E or F),A;D;F,True,7,20.300000,36.104827,40.995351,20.475716,117.875894,DECRYPT_SUCCESS,True,
+12,Three OR groups - satisfied,(A or B) and (C or D) and (E or F),A;D;F,True,8,21.319940,35.489292,38.746031,19.327827,114.883090,DECRYPT_SUCCESS,True,
+12,Three OR groups - satisfied,(A or B) and (C or D) and (E or F),A;D;F,True,9,20.180793,33.873508,39.485498,19.636803,113.176602,DECRYPT_SUCCESS,True,
+12,Three OR groups - satisfied,(A or B) and (C or D) and (E or F),A;D;F,True,10,20.105605,34.307531,38.681520,20.218254,113.312910,DECRYPT_SUCCESS,True,
+13,Three OR groups - missing third group,(A or B) and (C or D) and (E or F),A;B;C,False,1,20.378730,33.989237,42.668509,0.658230,97.694706,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+13,Three OR groups - missing third group,(A or B) and (C or D) and (E or F),A;B;C,False,2,21.001371,34.733644,38.451076,0.541991,94.728082,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+13,Three OR groups - missing third group,(A or B) and (C or D) and (E or F),A;B;C,False,3,20.549317,34.568758,38.648072,0.719419,94.485566,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+13,Three OR groups - missing third group,(A or B) and (C or D) and (E or F),A;B;C,False,4,20.492188,34.327511,38.893219,0.681689,94.394607,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+13,Three OR groups - missing third group,(A or B) and (C or D) and (E or F),A;B;C,False,5,20.486687,35.162947,39.204005,0.644120,95.497759,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+13,Three OR groups - missing third group,(A or B) and (C or D) and (E or F),A;B;C,False,6,20.563466,34.120523,38.472928,0.496162,93.653079,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+13,Three OR groups - missing third group,(A or B) and (C or D) and (E or F),A;B;C,False,7,20.531028,34.189244,39.089835,0.757237,94.567344,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+13,Three OR groups - missing third group,(A or B) and (C or D) and (E or F),A;B;C,False,8,22.037415,34.135284,39.983872,0.741898,96.898469,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+13,Three OR groups - missing third group,(A or B) and (C or D) and (E or F),A;B;C,False,9,21.331425,35.056880,38.985448,0.687399,96.061152,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+13,Three OR groups - missing third group,(A or B) and (C or D) and (E or F),A;B;C,False,10,20.419778,33.917370,39.288521,0.734989,94.360658,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+14,Deep nested policy - all requirements satisfied,((A and B) or C) and (D or (E and F)),A;B;E;F,True,1,20.302501,38.826372,38.968468,19.233568,117.330909,DECRYPT_SUCCESS,True,
+14,Deep nested policy - all requirements satisfied,((A and B) or C) and (D or (E and F)),A;B;E;F,True,2,20.375591,38.749412,38.507906,19.202738,116.835647,DECRYPT_SUCCESS,True,
+14,Deep nested policy - all requirements satisfied,((A and B) or C) and (D or (E and F)),A;B;E;F,True,3,20.074235,38.997488,38.620395,19.528163,117.220281,DECRYPT_SUCCESS,True,
+14,Deep nested policy - all requirements satisfied,((A and B) or C) and (D or (E and F)),A;B;E;F,True,4,20.344621,39.191134,39.051607,19.329538,117.916900,DECRYPT_SUCCESS,True,
+14,Deep nested policy - all requirements satisfied,((A and B) or C) and (D or (E and F)),A;B;E;F,True,5,20.470558,39.448362,38.733831,23.373944,122.026695,DECRYPT_SUCCESS,True,
+14,Deep nested policy - all requirements satisfied,((A and B) or C) and (D or (E and F)),A;B;E;F,True,6,20.385310,38.915510,38.529035,19.153660,116.983515,DECRYPT_SUCCESS,True,
+14,Deep nested policy - all requirements satisfied,((A and B) or C) and (D or (E and F)),A;B;E;F,True,7,20.499389,39.449191,38.822081,19.363587,118.134248,DECRYPT_SUCCESS,True,
+14,Deep nested policy - all requirements satisfied,((A and B) or C) and (D or (E and F)),A;B;E;F,True,8,20.092905,39.242734,38.404987,19.113010,116.853636,DECRYPT_SUCCESS,True,
+14,Deep nested policy - all requirements satisfied,((A and B) or C) and (D or (E and F)),A;B;E;F,True,9,20.034736,39.463101,39.233025,19.604352,118.335214,DECRYPT_SUCCESS,True,
+14,Deep nested policy - all requirements satisfied,((A and B) or C) and (D or (E and F)),A;B;E;F,True,10,20.131264,39.034318,38.432666,19.484924,117.083172,DECRYPT_SUCCESS,True,
+15,Deep nested policy - alternative branches satisfied,((A and B) or C) and (D or (E and F)),C;D,True,1,19.973077,28.917786,38.601664,19.170570,106.663097,DECRYPT_SUCCESS,True,
+15,Deep nested policy - alternative branches satisfied,((A and B) or C) and (D or (E and F)),C;D,True,2,20.042045,28.318077,38.789501,19.088911,106.238534,DECRYPT_SUCCESS,True,
+15,Deep nested policy - alternative branches satisfied,((A and B) or C) and (D or (E and F)),C;D,True,3,20.576267,29.613745,39.340112,19.733500,109.263624,DECRYPT_SUCCESS,True,
+15,Deep nested policy - alternative branches satisfied,((A and B) or C) and (D or (E and F)),C;D,True,4,20.115434,28.949266,40.302237,19.306847,108.673784,DECRYPT_SUCCESS,True,
+15,Deep nested policy - alternative branches satisfied,((A and B) or C) and (D or (E and F)),C;D,True,5,19.905938,29.247263,40.051780,19.315517,108.520498,DECRYPT_SUCCESS,True,
+15,Deep nested policy - alternative branches satisfied,((A and B) or C) and (D or (E and F)),C;D,True,6,19.965107,29.523897,39.215156,19.472375,108.176535,DECRYPT_SUCCESS,True,
+15,Deep nested policy - alternative branches satisfied,((A and B) or C) and (D or (E and F)),C;D,True,7,20.428188,29.079205,39.102555,20.119055,108.729003,DECRYPT_SUCCESS,True,
+15,Deep nested policy - alternative branches satisfied,((A and B) or C) and (D or (E and F)),C;D,True,8,20.709564,29.012895,38.704612,19.401725,107.828796,DECRYPT_SUCCESS,True,
+15,Deep nested policy - alternative branches satisfied,((A and B) or C) and (D or (E and F)),C;D,True,9,20.085846,28.671009,38.768392,21.684940,109.210187,DECRYPT_SUCCESS,True,
+15,Deep nested policy - alternative branches satisfied,((A and B) or C) and (D or (E and F)),C;D,True,10,20.385100,28.662331,38.781372,20.058314,107.887117,DECRYPT_SUCCESS,True,
+16,Deep nested policy - first group missing,((A and B) or C) and (D or (E and F)),A;D,False,1,20.854833,29.214313,39.367813,0.541262,89.978221,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+16,Deep nested policy - first group missing,((A and B) or C) and (D or (E and F)),A;D,False,2,20.897831,29.337881,38.569286,0.516462,89.321460,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+16,Deep nested policy - first group missing,((A and B) or C) and (D or (E and F)),A;D,False,3,21.746619,29.062054,38.442147,0.685099,89.935919,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+16,Deep nested policy - first group missing,((A and B) or C) and (D or (E and F)),A;D,False,4,21.901858,28.787338,40.158040,0.491513,91.338749,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+16,Deep nested policy - first group missing,((A and B) or C) and (D or (E and F)),A;D,False,5,20.158264,32.105146,44.994224,1.039235,98.296869,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+16,Deep nested policy - first group missing,((A and B) or C) and (D or (E and F)),A;D,False,6,24.174071,29.565257,38.419577,0.583171,92.742076,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+16,Deep nested policy - first group missing,((A and B) or C) and (D or (E and F)),A;D,False,7,20.478899,28.673169,39.929983,0.526382,89.608433,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+16,Deep nested policy - first group missing,((A and B) or C) and (D or (E and F)),A;D,False,8,21.479384,29.759572,39.692957,0.649540,91.581453,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+16,Deep nested policy - first group missing,((A and B) or C) and (D or (E and F)),A;D,False,9,20.160934,28.824579,42.095916,0.824498,91.905927,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+16,Deep nested policy - first group missing,((A and B) or C) and (D or (E and F)),A;D,False,10,20.369060,28.818679,39.745416,0.547822,89.480977,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+17,Deep nested policy - second group incomplete,((A and B) or C) and (D or (E and F)),A;B;E,False,1,21.233227,34.267222,40.299876,0.701209,96.501534,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+17,Deep nested policy - second group incomplete,((A and B) or C) and (D or (E and F)),A;B;E,False,2,20.050445,34.146635,39.826765,0.552532,94.576377,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+17,Deep nested policy - second group incomplete,((A and B) or C) and (D or (E and F)),A;B;E,False,3,20.140965,35.451283,40.143460,0.743368,96.479076,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+17,Deep nested policy - second group incomplete,((A and B) or C) and (D or (E and F)),A;B;E,False,4,23.220607,35.022431,40.627962,1.325160,100.196160,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+17,Deep nested policy - second group incomplete,((A and B) or C) and (D or (E and F)),A;B;E,False,5,23.249524,40.621893,39.444813,0.732169,104.048399,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+17,Deep nested policy - second group incomplete,((A and B) or C) and (D or (E and F)),A;B;E,False,6,22.511616,33.869640,39.010888,0.512292,95.904436,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+17,Deep nested policy - second group incomplete,((A and B) or C) and (D or (E and F)),A;B;E,False,7,20.132602,35.898177,39.790606,0.561991,96.383376,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+17,Deep nested policy - second group incomplete,((A and B) or C) and (D or (E and F)),A;B;E,False,8,21.058931,33.921288,38.784341,0.997555,94.762115,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+17,Deep nested policy - second group incomplete,((A and B) or C) and (D or (E and F)),A;B;E,False,9,20.263013,34.231224,39.422201,0.673700,94.590138,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+17,Deep nested policy - second group incomplete,((A and B) or C) and (D or (E and F)),A;B;E,False,10,22.997438,34.828344,40.620353,0.623460,99.069595,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+18,Three AND branches - first branch satisfied,(A and B and C) or (D and E) or (F and G),A;B;C,True,1,22.016835,34.401360,44.847498,19.274738,120.540431,DECRYPT_SUCCESS,True,
+18,Three AND branches - first branch satisfied,(A and B and C) or (D and E) or (F and G),A;B;C,True,2,24.245710,34.956681,43.080235,19.212429,121.495055,DECRYPT_SUCCESS,True,
+18,Three AND branches - first branch satisfied,(A and B and C) or (D and E) or (F and G),A;B;C,True,3,21.307916,34.727477,42.950156,19.809299,118.794848,DECRYPT_SUCCESS,True,
+18,Three AND branches - first branch satisfied,(A and B and C) or (D and E) or (F and G),A;B;C,True,4,22.624416,39.250444,44.368315,20.576467,126.819642,DECRYPT_SUCCESS,True,
+18,Three AND branches - first branch satisfied,(A and B and C) or (D and E) or (F and G),A;B;C,True,5,20.136164,34.100284,43.006315,19.632761,116.875524,DECRYPT_SUCCESS,True,
+18,Three AND branches - first branch satisfied,(A and B and C) or (D and E) or (F and G),A;B;C,True,6,20.165274,34.591717,43.340701,22.363808,120.461500,DECRYPT_SUCCESS,True,
+18,Three AND branches - first branch satisfied,(A and B and C) or (D and E) or (F and G),A;B;C,True,7,24.888710,36.067714,44.466741,19.607343,125.030508,DECRYPT_SUCCESS,True,
+18,Three AND branches - first branch satisfied,(A and B and C) or (D and E) or (F and G),A;B;C,True,8,21.294106,35.523984,43.773934,20.463389,121.055413,DECRYPT_SUCCESS,True,
+18,Three AND branches - first branch satisfied,(A and B and C) or (D and E) or (F and G),A;B;C,True,9,21.191097,34.207035,43.839621,19.437795,118.675548,DECRYPT_SUCCESS,True,
+18,Three AND branches - first branch satisfied,(A and B and C) or (D and E) or (F and G),A;B;C,True,10,20.592127,35.007471,43.769493,19.515034,118.884125,DECRYPT_SUCCESS,True,
+19,Three AND branches - second branch satisfied,(A and B and C) or (D and E) or (F and G),D;E,True,1,20.569208,29.481778,45.155660,19.942617,115.149263,DECRYPT_SUCCESS,True,
+19,Three AND branches - second branch satisfied,(A and B and C) or (D and E) or (F and G),D;E,True,2,20.552658,29.782622,47.304919,19.746721,117.386920,DECRYPT_SUCCESS,True,
+19,Three AND branches - second branch satisfied,(A and B and C) or (D and E) or (F and G),D;E,True,3,20.259372,28.694889,43.140662,19.126050,111.220973,DECRYPT_SUCCESS,True,
+19,Three AND branches - second branch satisfied,(A and B and C) or (D and E) or (F and G),D;E,True,4,20.221293,28.644729,45.686284,22.062714,116.615020,DECRYPT_SUCCESS,True,
+19,Three AND branches - second branch satisfied,(A and B and C) or (D and E) or (F and G),D;E,True,5,22.540477,30.428602,43.140182,19.548060,115.657321,DECRYPT_SUCCESS,True,
+19,Three AND branches - second branch satisfied,(A and B and C) or (D and E) or (F and G),D;E,True,6,21.312676,29.243700,43.452938,19.355285,113.364599,DECRYPT_SUCCESS,True,
+19,Three AND branches - second branch satisfied,(A and B and C) or (D and E) or (F and G),D;E,True,7,21.571451,28.801068,43.549145,19.292526,113.214190,DECRYPT_SUCCESS,True,
+19,Three AND branches - second branch satisfied,(A and B and C) or (D and E) or (F and G),D;E,True,8,21.305676,29.130852,47.135777,22.177342,119.749647,DECRYPT_SUCCESS,True,
+19,Three AND branches - second branch satisfied,(A and B and C) or (D and E) or (F and G),D;E,True,9,22.708973,31.168729,43.688513,19.428255,116.994470,DECRYPT_SUCCESS,True,
+19,Three AND branches - second branch satisfied,(A and B and C) or (D and E) or (F and G),D;E,True,10,20.373919,29.340209,42.915465,19.253537,111.883130,DECRYPT_SUCCESS,True,
+20,Three AND branches - third branch satisfied,(A and B and C) or (D and E) or (F and G),F;G,True,1,20.559565,29.811532,44.090237,19.648050,114.109384,DECRYPT_SUCCESS,True,
+20,Three AND branches - third branch satisfied,(A and B and C) or (D and E) or (F and G),F;G,True,2,21.660378,32.875964,46.494149,19.299957,120.330448,DECRYPT_SUCCESS,True,
+20,Three AND branches - third branch satisfied,(A and B and C) or (D and E) or (F and G),F;G,True,3,21.189098,28.766147,42.884706,20.173744,113.013695,DECRYPT_SUCCESS,True,
+20,Three AND branches - third branch satisfied,(A and B and C) or (D and E) or (F and G),F;G,True,4,23.259412,32.308831,47.446015,22.749012,125.763270,DECRYPT_SUCCESS,True,
+20,Three AND branches - third branch satisfied,(A and B and C) or (D and E) or (F and G),F;G,True,5,20.799634,29.514465,48.370399,23.293384,121.977882,DECRYPT_SUCCESS,True,
+20,Three AND branches - third branch satisfied,(A and B and C) or (D and E) or (F and G),F;G,True,6,23.685528,29.643324,43.680374,19.350806,116.360032,DECRYPT_SUCCESS,True,
+20,Three AND branches - third branch satisfied,(A and B and C) or (D and E) or (F and G),F;G,True,7,22.608994,32.358240,47.579334,21.078406,123.624974,DECRYPT_SUCCESS,True,
+20,Three AND branches - third branch satisfied,(A and B and C) or (D and E) or (F and G),F;G,True,8,24.803311,31.120801,46.811162,20.375860,123.111134,DECRYPT_SUCCESS,True,
+20,Three AND branches - third branch satisfied,(A and B and C) or (D and E) or (F and G),F;G,True,9,20.243613,27.795472,40.983106,18.337041,107.359232,DECRYPT_SUCCESS,True,
+20,Three AND branches - third branch satisfied,(A and B and C) or (D and E) or (F and G),F;G,True,10,21.459692,36.526447,48.279060,19.809949,126.075148,DECRYPT_SUCCESS,True,
+21,Three AND branches - mixed incomplete branches,(A and B and C) or (D and E) or (F and G),A;D;F,False,1,24.187169,37.849923,42.878537,0.684559,105.600188,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+21,Three AND branches - mixed incomplete branches,(A and B and C) or (D and E) or (F and G),A;D;F,False,2,23.367562,37.038499,47.154099,1.017954,108.578114,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+21,Three AND branches - mixed incomplete branches,(A and B and C) or (D and E) or (F and G),A;D;F,False,3,22.950139,37.740287,49.941664,0.730588,111.362678,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+21,Three AND branches - mixed incomplete branches,(A and B and C) or (D and E) or (F and G),A;D;F,False,4,25.800004,40.100530,51.482980,0.859476,118.242990,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+21,Three AND branches - mixed incomplete branches,(A and B and C) or (D and E) or (F and G),A;D;F,False,5,23.475751,33.990755,41.473348,0.717998,99.657852,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+21,Three AND branches - mixed incomplete branches,(A and B and C) or (D and E) or (F and G),A;D;F,False,6,20.505729,33.915985,42.551432,0.771338,97.744484,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+21,Three AND branches - mixed incomplete branches,(A and B and C) or (D and E) or (F and G),A;D;F,False,7,21.246985,33.939448,41.304950,0.501372,96.992755,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+21,Three AND branches - mixed incomplete branches,(A and B and C) or (D and E) or (F and G),A;D;F,False,8,20.206913,33.382097,41.024843,0.478532,95.092385,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+21,Three AND branches - mixed incomplete branches,(A and B and C) or (D and E) or (F and G),A;D;F,False,9,20.577817,37.638158,44.385071,0.698179,103.299225,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+21,Three AND branches - mixed incomplete branches,(A and B and C) or (D and E) or (F and G),A;D;F,False,10,22.667004,36.104772,42.473701,0.620050,101.865527,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+22,Three AND branches - one missing attribute,(A and B and C) or (D and E) or (F and G),A;B;D;E;F,True,1,19.896878,43.760032,42.162606,19.500174,125.319690,DECRYPT_SUCCESS,True,
+22,Three AND branches - one missing attribute,(A and B and C) or (D and E) or (F and G),A;B;D;E;F,True,2,19.980077,44.687156,42.660530,19.356336,126.684099,DECRYPT_SUCCESS,True,
+22,Three AND branches - one missing attribute,(A and B and C) or (D and E) or (F and G),A;B;D;E;F,True,3,20.596556,44.474491,43.252379,19.477893,127.801319,DECRYPT_SUCCESS,True,
+22,Three AND branches - one missing attribute,(A and B and C) or (D and E) or (F and G),A;B;D;E;F,True,4,20.147612,45.089271,44.264636,19.722090,129.223609,DECRYPT_SUCCESS,True,
+22,Three AND branches - one missing attribute,(A and B and C) or (D and E) or (F and G),A;B;D;E;F,True,5,20.456708,44.776856,49.340214,19.203868,133.777646,DECRYPT_SUCCESS,True,
+22,Three AND branches - one missing attribute,(A and B and C) or (D and E) or (F and G),A;B;D;E;F,True,6,19.920926,46.123134,43.961419,19.451774,129.457253,DECRYPT_SUCCESS,True,
+22,Three AND branches - one missing attribute,(A and B and C) or (D and E) or (F and G),A;B;D;E;F,True,7,21.099648,44.798096,42.891294,18.921082,127.710120,DECRYPT_SUCCESS,True,
+22,Three AND branches - one missing attribute,(A and B and C) or (D and E) or (F and G),A;B;D;E;F,True,8,20.227693,44.343342,43.195912,19.792249,127.559196,DECRYPT_SUCCESS,True,
+22,Three AND branches - one missing attribute,(A and B and C) or (D and E) or (F and G),A;B;D;E;F,True,9,20.730104,46.275792,42.885226,19.204037,129.095159,DECRYPT_SUCCESS,True,
+22,Three AND branches - one missing attribute,(A and B and C) or (D and E) or (F and G),A;B;D;E;F,True,10,23.636920,44.535099,42.954285,19.520813,130.647117,DECRYPT_SUCCESS,True,
+23,Four OR groups - one attribute per group,(A or B) and (C or D) and (E or F) and (G or H),A;D;E;H,True,1,20.024146,39.100365,47.017668,23.311795,129.453974,DECRYPT_SUCCESS,True,
+23,Four OR groups - one attribute per group,(A or B) and (C or D) and (E or F) and (G or H),A;D;E;H,True,2,21.922715,39.353791,46.427269,19.562282,127.266057,DECRYPT_SUCCESS,True,
+23,Four OR groups - one attribute per group,(A or B) and (C or D) and (E or F) and (G or H),A;D;E;H,True,3,20.445628,39.106715,46.634456,19.260358,125.447157,DECRYPT_SUCCESS,True,
+23,Four OR groups - one attribute per group,(A or B) and (C or D) and (E or F) and (G or H),A;D;E;H,True,4,20.255349,40.310568,47.147528,19.361465,127.074910,DECRYPT_SUCCESS,True,
+23,Four OR groups - one attribute per group,(A or B) and (C or D) and (E or F) and (G or H),A;D;E;H,True,5,20.102855,40.084090,46.321209,19.396107,125.904261,DECRYPT_SUCCESS,True,
+23,Four OR groups - one attribute per group,(A or B) and (C or D) and (E or F) and (G or H),A;D;E;H,True,6,21.142677,40.659440,47.357986,27.139383,136.299486,DECRYPT_SUCCESS,True,
+23,Four OR groups - one attribute per group,(A or B) and (C or D) and (E or F) and (G or H),A;D;E;H,True,7,20.085284,39.801664,45.853440,19.150259,124.890647,DECRYPT_SUCCESS,True,
+23,Four OR groups - one attribute per group,(A or B) and (C or D) and (E or F) and (G or H),A;D;E;H,True,8,20.109884,40.220856,46.390692,19.089309,125.810741,DECRYPT_SUCCESS,True,
+23,Four OR groups - one attribute per group,(A or B) and (C or D) and (E or F) and (G or H),A;D;E;H,True,9,20.019446,38.978617,47.667509,19.938217,126.603789,DECRYPT_SUCCESS,True,
+23,Four OR groups - one attribute per group,(A or B) and (C or D) and (E or F) and (G or H),A;D;E;H,True,10,20.663915,40.460804,47.741519,19.559883,128.426121,DECRYPT_SUCCESS,True,
+24,Four OR groups - multiple alternatives,(A or B) and (C or D) and (E or F) and (G or H),A;B;C;D;F;G,True,1,20.484769,52.834749,46.434691,19.032211,138.786420,DECRYPT_SUCCESS,True,
+24,Four OR groups - multiple alternatives,(A or B) and (C or D) and (E or F) and (G or H),A;B;C;D;F;G,True,2,20.895651,49.753509,46.406110,19.313205,136.368475,DECRYPT_SUCCESS,True,
+24,Four OR groups - multiple alternatives,(A or B) and (C or D) and (E or F) and (G or H),A;B;C;D;F;G,True,3,20.091643,49.778987,47.003270,19.384736,136.258636,DECRYPT_SUCCESS,True,
+24,Four OR groups - multiple alternatives,(A or B) and (C or D) and (E or F) and (G or H),A;B;C;D;F;G,True,4,21.391353,54.146489,47.042481,19.452293,142.032616,DECRYPT_SUCCESS,True,
+24,Four OR groups - multiple alternatives,(A or B) and (C or D) and (E or F) and (G or H),A;B;C;D;F;G,True,5,20.743445,50.681391,55.529160,20.427197,147.381193,DECRYPT_SUCCESS,True,
+24,Four OR groups - multiple alternatives,(A or B) and (C or D) and (E or F) and (G or H),A;B;C;D;F;G,True,6,23.826341,53.415325,51.510334,21.554200,150.306200,DECRYPT_SUCCESS,True,
+24,Four OR groups - multiple alternatives,(A or B) and (C or D) and (E or F) and (G or H),A;B;C;D;F;G,True,7,20.111382,49.916369,48.983294,21.665657,140.676702,DECRYPT_SUCCESS,True,
+24,Four OR groups - multiple alternatives,(A or B) and (C or D) and (E or F) and (G or H),A;B;C;D;F;G,True,8,22.596301,52.598188,49.649163,19.761637,144.605289,DECRYPT_SUCCESS,True,
+24,Four OR groups - multiple alternatives,(A or B) and (C or D) and (E or F) and (G or H),A;B;C;D;F;G,True,9,20.105792,50.502699,46.432745,19.062518,136.103754,DECRYPT_SUCCESS,True,
+24,Four OR groups - multiple alternatives,(A or B) and (C or D) and (E or F) and (G or H),A;B;C;D;F;G,True,10,20.203090,49.869060,46.033682,19.231385,135.337217,DECRYPT_SUCCESS,True,
+25,Four OR groups - fourth group missing,(A or B) and (C or D) and (E or F) and (G or H),A;C;E,False,1,19.985643,34.143670,51.282979,0.672139,106.084431,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+25,Four OR groups - fourth group missing,(A or B) and (C or D) and (E or F) and (G or H),A;C;E,False,2,21.651446,35.098054,47.125185,0.666869,104.541554,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+25,Four OR groups - fourth group missing,(A or B) and (C or D) and (E or F) and (G or H),A;C;E,False,3,21.724026,35.290572,46.475653,0.519872,104.010123,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+25,Four OR groups - fourth group missing,(A or B) and (C or D) and (E or F) and (G or H),A;C;E,False,4,21.003717,34.706770,46.942426,0.551681,103.204594,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+25,Four OR groups - fourth group missing,(A or B) and (C or D) and (E or F) and (G or H),A;C;E,False,5,22.703791,34.721701,47.246233,0.761558,105.433283,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+25,Four OR groups - fourth group missing,(A or B) and (C or D) and (E or F) and (G or H),A;C;E,False,6,20.648933,33.461820,45.670606,0.531882,100.313241,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+25,Four OR groups - fourth group missing,(A or B) and (C or D) and (E or F) and (G or H),A;C;E,False,7,20.599716,33.907712,46.685631,0.739578,101.932637,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+25,Four OR groups - fourth group missing,(A or B) and (C or D) and (E or F) and (G or H),A;C;E,False,8,21.787824,34.610034,50.017377,0.815807,107.231042,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+25,Four OR groups - fourth group missing,(A or B) and (C or D) and (E or F) and (G or H),A;C;E,False,9,21.622655,35.055606,46.116368,0.590501,103.385130,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+25,Four OR groups - fourth group missing,(A or B) and (C or D) and (E or F) and (G or H),A;C;E,False,10,21.801976,35.763674,47.418459,0.666749,105.650858,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+26,Four OR groups - third group missing,(A or B) and (C or D) and (E or F) and (G or H),B;D;G,False,1,21.094425,34.364886,46.577653,1.143852,103.180816,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+26,Four OR groups - third group missing,(A or B) and (C or D) and (E or F) and (G or H),B;D;G,False,2,22.580331,34.404367,46.196707,0.584491,103.765896,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+26,Four OR groups - third group missing,(A or B) and (C or D) and (E or F) and (G or H),B;D;G,False,3,20.846469,34.233369,45.748117,0.582230,101.410185,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+26,Four OR groups - third group missing,(A or B) and (C or D) and (E or F) and (G or H),B;D;G,False,4,20.887928,37.250221,48.461773,0.915425,107.515347,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+26,Four OR groups - third group missing,(A or B) and (C or D) and (E or F) and (G or H),B;D;G,False,5,20.813550,35.132724,58.099679,1.246781,115.292734,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+26,Four OR groups - third group missing,(A or B) and (C or D) and (E or F) and (G or H),B;D;G,False,6,21.619737,34.045010,47.455559,0.794387,103.914693,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+26,Four OR groups - third group missing,(A or B) and (C or D) and (E or F) and (G or H),B;D;G,False,7,20.867289,34.978697,46.276375,0.747579,102.869940,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+26,Four OR groups - third group missing,(A or B) and (C or D) and (E or F) and (G or H),B;D;G,False,8,20.553504,34.002722,49.558006,0.903825,105.018057,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+26,Four OR groups - third group missing,(A or B) and (C or D) and (E or F) and (G or H),B;D;G,False,9,23.705534,36.676360,50.670536,0.710599,111.763029,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+26,Four OR groups - third group missing,(A or B) and (C or D) and (E or F) and (G or H),B;D;G,False,10,20.674032,34.083231,46.818389,0.867456,102.443108,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+27,Complex nested policy - satisfied through left branches,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),B;C,True,1,21.960263,32.772240,56.893819,23.656186,135.282508,DECRYPT_SUCCESS,True,
+27,Complex nested policy - satisfied through left branches,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),B;C,True,2,25.137343,32.790320,52.909222,20.582933,131.419818,DECRYPT_SUCCESS,True,
+27,Complex nested policy - satisfied through left branches,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),B;C,True,3,22.526934,31.764346,52.486750,24.040718,130.818748,DECRYPT_SUCCESS,True,
+27,Complex nested policy - satisfied through left branches,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),B;C,True,4,24.094298,34.074890,53.052339,20.387707,131.609234,DECRYPT_SUCCESS,True,
+27,Complex nested policy - satisfied through left branches,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),B;C,True,5,22.238278,38.521830,68.970806,27.080111,156.811025,DECRYPT_SUCCESS,True,
+27,Complex nested policy - satisfied through left branches,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),B;C,True,6,26.839544,38.006910,66.036752,25.562006,156.445212,DECRYPT_SUCCESS,True,
+27,Complex nested policy - satisfied through left branches,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),B;C,True,7,26.043508,41.860447,66.683052,27.669993,162.257000,DECRYPT_SUCCESS,True,
+27,Complex nested policy - satisfied through left branches,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),B;C,True,8,25.762990,35.787263,59.513558,24.460352,145.524163,DECRYPT_SUCCESS,True,
+27,Complex nested policy - satisfied through left branches,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),B;C,True,9,20.252389,29.242866,51.883559,22.811749,124.190563,DECRYPT_SUCCESS,True,
+27,Complex nested policy - satisfied through left branches,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),B;C,True,10,21.436750,32.293399,49.888631,19.187135,122.805915,DECRYPT_SUCCESS,True,
+28,Complex nested policy - satisfied through right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;G;I,True,1,20.933718,40.371601,66.375500,30.062832,157.743651,DECRYPT_SUCCESS,True,
+28,Complex nested policy - satisfied through right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;G;I,True,2,27.845380,41.041630,66.603535,25.532866,161.023411,DECRYPT_SUCCESS,True,
+28,Complex nested policy - satisfied through right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;G;I,True,3,25.318321,43.955480,54.686449,26.348486,150.308736,DECRYPT_SUCCESS,True,
+28,Complex nested policy - satisfied through right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;G;I,True,4,25.538368,48.474149,71.132170,23.081359,168.226046,DECRYPT_SUCCESS,True,
+28,Complex nested policy - satisfied through right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;G;I,True,5,24.971667,44.055407,55.165233,21.317776,145.510083,DECRYPT_SUCCESS,True,
+28,Complex nested policy - satisfied through right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;G;I,True,6,20.435057,33.899959,61.914006,20.198782,136.447804,DECRYPT_SUCCESS,True,
+28,Complex nested policy - satisfied through right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;G;I,True,7,20.661426,36.935448,50.732314,19.909966,128.239154,DECRYPT_SUCCESS,True,
+28,Complex nested policy - satisfied through right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;G;I,True,8,20.706646,37.261563,62.001397,21.005880,140.975486,DECRYPT_SUCCESS,True,
+28,Complex nested policy - satisfied through right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;G;I,True,9,22.302050,38.474493,52.282119,21.023499,134.082161,DECRYPT_SUCCESS,True,
+28,Complex nested policy - satisfied through right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;G;I,True,10,21.214378,36.562184,53.327742,23.474641,134.578945,DECRYPT_SUCCESS,True,
+29,Complex nested policy - incomplete left branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),A;D,False,1,20.949430,30.879925,52.271118,1.242220,105.342693,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+29,Complex nested policy - incomplete left branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),A;D,False,2,23.056187,30.598228,55.142705,1.832961,110.630081,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+29,Complex nested policy - incomplete left branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),A;D,False,3,21.931724,31.448586,51.040798,1.428079,105.849187,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+29,Complex nested policy - incomplete left branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),A;D,False,4,22.114334,29.652972,51.498932,1.306319,104.572557,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+29,Complex nested policy - incomplete left branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),A;D,False,5,21.770928,30.321263,52.521525,1.530496,106.144212,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+29,Complex nested policy - incomplete left branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),A;D,False,6,23.381561,32.092055,54.010240,1.284120,110.767976,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+29,Complex nested policy - incomplete left branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),A;D,False,7,22.279329,29.473016,54.352415,1.228380,107.333140,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+29,Complex nested policy - incomplete left branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),A;D,False,8,23.088997,30.182755,50.810460,1.332290,105.414502,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+29,Complex nested policy - incomplete left branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),A;D,False,9,23.013018,33.455254,55.207651,1.273960,112.949883,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+29,Complex nested policy - incomplete left branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),A;D,False,10,22.685594,32.183002,53.778894,1.798472,110.445962,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+30,Complex nested policy - incomplete right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;H,False,1,23.260803,29.435398,52.867040,1.415487,106.978728,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+30,Complex nested policy - incomplete right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;H,False,2,20.742934,29.849580,51.885424,1.235261,103.713199,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+30,Complex nested policy - incomplete right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;H,False,3,22.171520,29.018204,51.625048,1.284440,104.099212,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+30,Complex nested policy - incomplete right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;H,False,4,23.149186,33.701439,49.945366,1.337598,108.133589,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+30,Complex nested policy - incomplete right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;H,False,5,22.571624,30.875534,54.757169,1.552245,109.756572,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+30,Complex nested policy - incomplete right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;H,False,6,27.765391,33.206769,66.409745,1.507956,128.889861,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+30,Complex nested policy - incomplete right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;H,False,7,26.330796,34.875440,56.567321,1.533936,119.307493,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+30,Complex nested policy - incomplete right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;H,False,8,23.868564,29.783962,59.391606,1.415518,114.459650,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+30,Complex nested policy - incomplete right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;H,False,9,29.033073,41.512126,61.215146,1.375728,133.136073,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+30,Complex nested policy - incomplete right branch,((A or B) and (C or (D and E))) or ((F and G) and (H or I)),F;H,False,10,27.742944,35.958933,57.584995,1.617264,122.904136,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+31,Large policy - first complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;B;E,True,1,22.578344,46.907942,58.286424,20.489396,148.262106,DECRYPT_SUCCESS,True,
+31,Large policy - first complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;B;E,True,2,21.150545,42.258207,62.269279,23.041328,148.719359,DECRYPT_SUCCESS,True,
+31,Large policy - first complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;B;E,True,3,23.061929,37.587477,56.096527,20.159642,136.905575,DECRYPT_SUCCESS,True,
+31,Large policy - first complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;B;E,True,4,21.333195,36.179651,59.088939,22.744852,139.346637,DECRYPT_SUCCESS,True,
+31,Large policy - first complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;B;E,True,5,21.642770,37.158986,57.205590,20.621105,136.628451,DECRYPT_SUCCESS,True,
+31,Large policy - first complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;B;E,True,6,23.232696,45.247757,77.393833,22.220269,168.094555,DECRYPT_SUCCESS,True,
+31,Large policy - first complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;B;E,True,7,21.186546,33.872559,53.001875,19.232818,127.293798,DECRYPT_SUCCESS,True,
+31,Large policy - first complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;B;E,True,8,20.832831,34.425510,56.617019,19.738800,131.614160,DECRYPT_SUCCESS,True,
+31,Large policy - first complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;B;E,True,9,20.591156,34.048674,57.007173,18.752774,130.399777,DECRYPT_SUCCESS,True,
+31,Large policy - first complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;B;E,True,10,24.256229,39.092825,59.014903,19.209608,141.573565,DECRYPT_SUCCESS,True,
+32,Large policy - second complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),G;H,True,1,19.989946,29.883729,54.153429,19.241307,123.268411,DECRYPT_SUCCESS,True,
+32,Large policy - second complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),G;H,True,2,22.244570,28.637038,61.061410,22.153243,134.096261,DECRYPT_SUCCESS,True,
+32,Large policy - second complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),G;H,True,3,20.521137,27.673694,54.014770,19.282998,121.492599,DECRYPT_SUCCESS,True,
+32,Large policy - second complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),G;H,True,4,23.520649,31.855580,61.440244,18.673755,135.490228,DECRYPT_SUCCESS,True,
+32,Large policy - second complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),G;H,True,5,23.956884,32.784503,78.463675,22.966679,158.171741,DECRYPT_SUCCESS,True,
+32,Large policy - second complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),G;H,True,6,22.052954,33.442234,53.944621,21.288706,130.728515,DECRYPT_SUCCESS,True,
+32,Large policy - second complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),G;H,True,7,22.163683,34.357069,63.837366,24.058162,144.416280,DECRYPT_SUCCESS,True,
+32,Large policy - second complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),G;H,True,8,25.785525,39.895383,66.378474,19.920797,151.980179,DECRYPT_SUCCESS,True,
+32,Large policy - second complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),G;H,True,9,24.462465,34.662324,58.693695,19.589983,137.408467,DECRYPT_SUCCESS,True,
+32,Large policy - second complex branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),G;H,True,10,24.587343,34.181781,57.007483,25.377660,141.154267,DECRYPT_SUCCESS,True,
+33,Large policy - third alternative within first group,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),C;D;F,True,1,20.538286,36.155830,57.864549,19.955737,134.514402,DECRYPT_SUCCESS,True,
+33,Large policy - third alternative within first group,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),C;D;F,True,2,21.743227,37.241074,56.560452,20.193152,135.737905,DECRYPT_SUCCESS,True,
+33,Large policy - third alternative within first group,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),C;D;F,True,3,20.447588,34.660656,57.789470,21.791638,134.689352,DECRYPT_SUCCESS,True,
+33,Large policy - third alternative within first group,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),C;D;F,True,4,21.221747,34.904991,57.159630,22.672473,135.958841,DECRYPT_SUCCESS,True,
+33,Large policy - third alternative within first group,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),C;D;F,True,5,22.460946,38.467025,56.903165,20.735043,138.566179,DECRYPT_SUCCESS,True,
+33,Large policy - third alternative within first group,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),C;D;F,True,6,19.999176,35.523709,56.271786,19.562361,131.357032,DECRYPT_SUCCESS,True,
+33,Large policy - third alternative within first group,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),C;D;F,True,7,20.472547,34.163174,62.342870,19.605670,136.584261,DECRYPT_SUCCESS,True,
+33,Large policy - third alternative within first group,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),C;D;F,True,8,21.338053,34.900973,56.791994,19.661662,132.692682,DECRYPT_SUCCESS,True,
+33,Large policy - third alternative within first group,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),C;D;F,True,9,20.634655,35.574749,59.264099,19.518853,134.992356,DECRYPT_SUCCESS,True,
+33,Large policy - third alternative within first group,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),C;D;F,True,10,20.548366,34.375140,54.009270,21.338064,130.270840,DECRYPT_SUCCESS,True,
+34,Large policy - no complete branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;C;E;G,False,1,20.900891,39.405290,61.342663,1.048414,122.697258,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+34,Large policy - no complete branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;C;E;G,False,2,24.701320,42.235967,59.838098,0.739878,127.515263,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+34,Large policy - no complete branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;C;E;G,False,3,23.053277,40.255627,54.475863,0.705379,118.490146,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+34,Large policy - no complete branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;C;E;G,False,4,23.172835,42.385513,58.482671,0.694429,124.735448,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+34,Large policy - no complete branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;C;E;G,False,5,23.665597,40.095601,55.426997,0.717369,119.905564,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+34,Large policy - no complete branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;C;E;G,False,6,22.618042,43.036354,62.566426,0.728689,128.949511,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+34,Large policy - no complete branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;C;E;G,False,7,20.719794,40.472193,56.353624,0.769808,118.315419,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+34,Large policy - no complete branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;C;E;G,False,8,22.072661,44.284112,57.688535,0.738278,124.783586,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+34,Large policy - no complete branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;C;E;G,False,9,23.625397,40.360946,53.724654,0.706979,118.417976,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+34,Large policy - no complete branch,((A and B) or (C and D)) and (E or F) or ((G and H) or (I and J)),A;C;E;G,False,10,22.625174,39.309082,53.802532,0.705089,116.441877,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+35,"Stress 1 - nested AND/OR, satisfied",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E;G,True,1,20.635927,41.036084,51.842885,22.113742,135.628638,DECRYPT_SUCCESS,True,
+35,"Stress 1 - nested AND/OR, satisfied",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E;G,True,2,23.251754,45.270028,49.265463,19.262307,137.049552,DECRYPT_SUCCESS,True,
+35,"Stress 1 - nested AND/OR, satisfied",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E;G,True,3,19.729020,43.157200,54.187548,19.392284,136.466052,DECRYPT_SUCCESS,True,
+35,"Stress 1 - nested AND/OR, satisfied",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E;G,True,4,22.053584,37.769886,52.466683,30.294694,142.584847,DECRYPT_SUCCESS,True,
+35,"Stress 1 - nested AND/OR, satisfied",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E;G,True,5,20.810072,38.441225,45.581483,19.218637,124.051417,DECRYPT_SUCCESS,True,
+35,"Stress 1 - nested AND/OR, satisfied",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E;G,True,6,20.408648,38.977498,47.116330,19.802737,126.305213,DECRYPT_SUCCESS,True,
+35,"Stress 1 - nested AND/OR, satisfied",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E;G,True,7,19.868938,38.439065,45.439897,19.726190,123.474090,DECRYPT_SUCCESS,True,
+35,"Stress 1 - nested AND/OR, satisfied",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E;G,True,8,23.988692,43.599336,53.525838,27.159263,148.273129,DECRYPT_SUCCESS,True,
+35,"Stress 1 - nested AND/OR, satisfied",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E;G,True,9,24.138290,41.039495,55.742573,24.911769,145.832127,DECRYPT_SUCCESS,True,
+35,"Stress 1 - nested AND/OR, satisfied",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E;G,True,10,21.893585,49.238364,63.463811,23.452332,158.048092,DECRYPT_SUCCESS,True,
+36,"Stress 2 - nested AND/OR, final group missing",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E,False,1,20.782963,33.538804,49.682918,0.712469,104.717154,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+36,"Stress 2 - nested AND/OR, final group missing",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E,False,2,19.637581,32.219573,45.261045,0.811858,97.930057,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+36,"Stress 2 - nested AND/OR, final group missing",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E,False,3,20.222902,33.170787,45.471723,0.707609,99.573021,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+36,"Stress 2 - nested AND/OR, final group missing",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E,False,4,22.847300,38.166338,46.396782,0.762358,108.172778,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+36,"Stress 2 - nested AND/OR, final group missing",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E,False,5,20.461148,34.340347,49.836487,0.775778,105.413760,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+36,"Stress 2 - nested AND/OR, final group missing",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E,False,6,20.371990,43.487505,54.225588,0.841786,118.926869,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+36,"Stress 2 - nested AND/OR, final group missing",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E,False,7,20.393509,35.828375,55.008334,1.313070,112.543288,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+36,"Stress 2 - nested AND/OR, final group missing",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E,False,8,20.070504,33.171908,45.438355,0.719089,99.399856,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+36,"Stress 2 - nested AND/OR, final group missing",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E,False,9,19.867527,32.755975,59.441314,1.037614,113.102430,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+36,"Stress 2 - nested AND/OR, final group missing",(((A and B) or (C and D)) and (E or F)) and (G or H),A;B;E,False,10,26.815218,34.337969,45.225998,1.003063,107.382248,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+37,"Stress 3 - nested alternative branches, left satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),A;C;G,True,1,20.496768,33.768550,56.299643,23.971413,134.536374,DECRYPT_SUCCESS,True,
+37,"Stress 3 - nested alternative branches, left satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),A;C;G,True,2,25.870881,41.652666,55.407698,19.179238,142.110483,DECRYPT_SUCCESS,True,
+37,"Stress 3 - nested alternative branches, left satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),A;C;G,True,3,21.661098,34.494647,50.926149,19.533323,126.615217,DECRYPT_SUCCESS,True,
+37,"Stress 3 - nested alternative branches, left satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),A;C;G,True,4,22.415478,33.046061,50.818589,23.057728,129.337856,DECRYPT_SUCCESS,True,
+37,"Stress 3 - nested alternative branches, left satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),A;C;G,True,5,23.206895,37.685015,50.702263,22.017485,133.611658,DECRYPT_SUCCESS,True,
+37,"Stress 3 - nested alternative branches, left satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),A;C;G,True,6,22.117021,32.699397,56.316202,20.072906,131.205526,DECRYPT_SUCCESS,True,
+37,"Stress 3 - nested alternative branches, left satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),A;C;G,True,7,22.504235,35.155277,55.796434,18.989820,132.445766,DECRYPT_SUCCESS,True,
+37,"Stress 3 - nested alternative branches, left satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),A;C;G,True,8,21.646238,35.044750,55.435417,23.601859,135.728264,DECRYPT_SUCCESS,True,
+37,"Stress 3 - nested alternative branches, left satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),A;C;G,True,9,23.663306,40.104029,60.809654,22.295180,146.872169,DECRYPT_SUCCESS,True,
+37,"Stress 3 - nested alternative branches, left satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),A;C;G,True,10,23.784714,39.720776,58.770126,23.282073,145.557689,DECRYPT_SUCCESS,True,
+38,"Stress 4 - nested alternative branches, right satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;F;H;I,True,1,21.571939,39.032356,49.330033,22.224872,132.159200,DECRYPT_SUCCESS,True,
+38,"Stress 4 - nested alternative branches, right satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;F;H;I,True,2,20.286481,38.416526,51.358482,21.259487,131.320976,DECRYPT_SUCCESS,True,
+38,"Stress 4 - nested alternative branches, right satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;F;H;I,True,3,23.320433,40.790207,51.446531,19.682181,135.239352,DECRYPT_SUCCESS,True,
+38,"Stress 4 - nested alternative branches, right satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;F;H;I,True,4,21.265534,40.210657,51.105825,21.867846,134.449862,DECRYPT_SUCCESS,True,
+38,"Stress 4 - nested alternative branches, right satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;F;H;I,True,5,20.861760,40.075561,48.353939,18.674207,127.965467,DECRYPT_SUCCESS,True,
+38,"Stress 4 - nested alternative branches, right satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;F;H;I,True,6,22.180460,40.224246,54.715189,21.799968,138.919863,DECRYPT_SUCCESS,True,
+38,"Stress 4 - nested alternative branches, right satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;F;H;I,True,7,21.038667,39.273812,58.645298,19.449445,138.407222,DECRYPT_SUCCESS,True,
+38,"Stress 4 - nested alternative branches, right satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;F;H;I,True,8,20.407997,41.083574,52.469205,20.107983,134.068759,DECRYPT_SUCCESS,True,
+38,"Stress 4 - nested alternative branches, right satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;F;H;I,True,9,20.890970,39.659766,50.295679,19.925678,130.772093,DECRYPT_SUCCESS,True,
+38,"Stress 4 - nested alternative branches, right satisfied",((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;F;H;I,True,10,22.885879,41.623605,52.092312,20.007885,136.609681,DECRYPT_SUCCESS,True,
+39,Stress 5 - both major branches incomplete,((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;E;H,False,1,20.938182,36.106693,51.238635,0.725039,109.008549,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+39,Stress 5 - both major branches incomplete,((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;E;H,False,2,20.767843,35.916637,51.799905,1.169081,109.653466,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+39,Stress 5 - both major branches incomplete,((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;E;H,False,3,21.021040,35.169598,52.206692,1.146982,109.544312,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+39,Stress 5 - both major branches incomplete,((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;E;H,False,4,20.740833,34.407911,50.304290,1.158192,106.611226,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+39,Stress 5 - both major branches incomplete,((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;E;H,False,5,20.420948,34.679816,52.626763,1.257610,108.985137,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+39,Stress 5 - both major branches incomplete,((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;E;H,False,6,20.994751,35.512402,52.346468,1.210031,110.063652,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+39,Stress 5 - both major branches incomplete,((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;E;H,False,7,20.587737,34.969309,51.077148,1.407248,108.041442,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+39,Stress 5 - both major branches incomplete,((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;E;H,False,8,20.311750,34.737525,51.064480,1.163012,107.276767,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+39,Stress 5 - both major branches incomplete,((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;E;H,False,9,20.951910,34.551369,50.245241,1.240690,106.989210,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+39,Stress 5 - both major branches incomplete,((A and (B or C)) or (D and (E or F))) and (G or (H and I)),D;E;H,False,10,20.725522,35.505234,50.696514,1.259380,108.186650,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+40,Stress 6 - deep left branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;B;E,True,1,20.598207,34.886642,70.317594,20.020916,145.823359,DECRYPT_SUCCESS,True,
+40,Stress 6 - deep left branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;B;E,True,2,20.277992,34.022756,65.556130,19.540243,139.397121,DECRYPT_SUCCESS,True,
+40,Stress 6 - deep left branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;B;E,True,3,20.229823,33.836979,66.383537,20.519267,140.969606,DECRYPT_SUCCESS,True,
+40,Stress 6 - deep left branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;B;E,True,4,20.412760,34.700375,67.630987,19.607592,142.351714,DECRYPT_SUCCESS,True,
+40,Stress 6 - deep left branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;B;E,True,5,20.126594,34.748005,65.620669,19.495554,139.990822,DECRYPT_SUCCESS,True,
+40,Stress 6 - deep left branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;B;E,True,6,20.748723,33.567613,65.874395,20.152445,140.343176,DECRYPT_SUCCESS,True,
+40,Stress 6 - deep left branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;B;E,True,7,20.234821,34.496458,67.574179,20.571997,142.877455,DECRYPT_SUCCESS,True,
+40,Stress 6 - deep left branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;B;E,True,8,19.991985,34.134964,69.446140,19.356146,142.929235,DECRYPT_SUCCESS,True,
+40,Stress 6 - deep left branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;B;E,True,9,20.705114,34.538128,66.220560,19.383426,140.847228,DECRYPT_SUCCESS,True,
+40,Stress 6 - deep left branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;B;E,True,10,20.073885,34.265082,66.350667,19.157930,139.847564,DECRYPT_SUCCESS,True,
+41,Stress 7 - deep right branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),H;J;K,True,1,20.112404,34.006926,66.158880,19.599813,139.878023,DECRYPT_SUCCESS,True,
+41,Stress 7 - deep right branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),H;J;K,True,2,20.253203,34.688114,66.666204,19.273937,140.881458,DECRYPT_SUCCESS,True,
+41,Stress 7 - deep right branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),H;J;K,True,3,20.105434,34.161734,65.631408,19.103599,139.002175,DECRYPT_SUCCESS,True,
+41,Stress 7 - deep right branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),H;J;K,True,4,20.172313,33.715231,65.505722,19.439984,138.833250,DECRYPT_SUCCESS,True,
+41,Stress 7 - deep right branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),H;J;K,True,5,20.165523,33.655942,65.927324,19.595923,139.344712,DECRYPT_SUCCESS,True,
+41,Stress 7 - deep right branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),H;J;K,True,6,20.305892,34.503138,66.018943,19.306567,140.134540,DECRYPT_SUCCESS,True,
+41,Stress 7 - deep right branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),H;J;K,True,7,20.210243,33.769849,66.667111,20.268364,140.915567,DECRYPT_SUCCESS,True,
+41,Stress 7 - deep right branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),H;J;K,True,8,20.299941,34.264692,66.855129,19.211199,140.630961,DECRYPT_SUCCESS,True,
+41,Stress 7 - deep right branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),H;J;K,True,9,20.775114,35.249386,81.798606,19.851608,157.674714,DECRYPT_SUCCESS,True,
+41,Stress 7 - deep right branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),H;J;K,True,10,19.980547,33.929737,65.966204,19.949146,139.825634,DECRYPT_SUCCESS,True,
+42,Stress 8 - neither deep branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;C;E;H;I,False,1,19.887296,43.955521,66.039803,0.768218,130.650838,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+42,Stress 8 - neither deep branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;C;E;H;I,False,2,20.346831,46.114685,72.497301,0.807017,139.765834,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+42,Stress 8 - neither deep branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;C;E;H;I,False,3,20.280321,44.931006,66.455314,0.737729,132.404370,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+42,Stress 8 - neither deep branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;C;E;H;I,False,4,20.605687,44.721338,66.123191,0.843156,132.293372,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+42,Stress 8 - neither deep branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;C;E;H;I,False,5,20.123653,44.412102,66.217531,0.920836,131.674122,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+42,Stress 8 - neither deep branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;C;E;H;I,False,6,20.071406,44.240714,65.273734,0.716939,130.302793,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+42,Stress 8 - neither deep branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;C;E;H;I,False,7,20.635414,46.423831,78.436429,0.743758,146.239432,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+42,Stress 8 - neither deep branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;C;E;H;I,False,8,20.213963,44.680438,65.163377,0.782227,130.840005,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+42,Stress 8 - neither deep branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;C;E;H;I,False,9,20.935801,44.720929,65.871194,0.727249,132.255173,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+42,Stress 8 - neither deep branch satisfied,(((A and B) or (C and D)) and (E or (F and G))) or ((H and (I or J)) and (K or (L and M))),A;C;E;H;I,False,10,20.879782,46.394782,67.075777,0.753688,135.104029,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+43,"Stress 9 - nested AND/OR, alternative satisfied",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),B;E;F;I;J,True,1,20.326660,45.939589,54.324058,20.335520,140.925827,DECRYPT_SUCCESS,True,
+43,"Stress 9 - nested AND/OR, alternative satisfied",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),B;E;F;I;J,True,2,21.405473,46.270504,54.166072,19.527882,141.369931,DECRYPT_SUCCESS,True,
+43,"Stress 9 - nested AND/OR, alternative satisfied",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),B;E;F;I;J,True,3,22.042192,45.126273,53.941713,19.393566,140.503744,DECRYPT_SUCCESS,True,
+43,"Stress 9 - nested AND/OR, alternative satisfied",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),B;E;F;I;J,True,4,20.539896,45.656373,55.495358,27.140735,148.832362,DECRYPT_SUCCESS,True,
+43,"Stress 9 - nested AND/OR, alternative satisfied",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),B;E;F;I;J,True,5,21.793408,45.684132,56.191908,19.697561,143.367009,DECRYPT_SUCCESS,True,
+43,"Stress 9 - nested AND/OR, alternative satisfied",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),B;E;F;I;J,True,6,21.301442,45.559365,55.770383,20.117824,142.749014,DECRYPT_SUCCESS,True,
+43,"Stress 9 - nested AND/OR, alternative satisfied",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),B;E;F;I;J,True,7,20.605473,45.849420,56.634560,19.772810,142.862263,DECRYPT_SUCCESS,True,
+43,"Stress 9 - nested AND/OR, alternative satisfied",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),B;E;F;I;J,True,8,20.658834,44.365313,54.622821,19.512504,139.159472,DECRYPT_SUCCESS,True,
+43,"Stress 9 - nested AND/OR, alternative satisfied",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),B;E;F;I;J,True,9,20.077123,46.020907,55.878242,19.763530,141.739802,DECRYPT_SUCCESS,True,
+43,"Stress 9 - nested AND/OR, alternative satisfied",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),B;E;F;I;J,True,10,20.381608,44.817407,55.477179,19.246027,139.922221,DECRYPT_SUCCESS,True,
+44,"Stress 10 - nested AND/OR, inner requirement missing",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),A;C;E;H;I,False,1,19.598163,45.566102,53.132004,0.662580,118.958849,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+44,"Stress 10 - nested AND/OR, inner requirement missing",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),A;C;E;H;I,False,2,20.053375,44.371723,52.896409,0.738538,118.060045,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+44,"Stress 10 - nested AND/OR, inner requirement missing",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),A;C;E;H;I,False,3,20.199054,43.174193,57.456046,0.733929,121.563222,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+44,"Stress 10 - nested AND/OR, inner requirement missing",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),A;C;E;H;I,False,4,19.520692,43.437196,53.201525,0.715439,116.874852,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+44,"Stress 10 - nested AND/OR, inner requirement missing",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),A;C;E;H;I,False,5,23.648638,50.908441,57.150371,0.807858,132.515308,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+44,"Stress 10 - nested AND/OR, inner requirement missing",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),A;C;E;H;I,False,6,21.999772,47.249278,64.129493,0.873976,134.252519,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+44,"Stress 10 - nested AND/OR, inner requirement missing",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),A;C;E;H;I,False,7,26.379816,49.126296,59.815451,0.838337,136.159900,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+44,"Stress 10 - nested AND/OR, inner requirement missing",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),A;C;E;H;I,False,8,20.275153,44.756755,55.208722,0.673590,120.914220,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+44,"Stress 10 - nested AND/OR, inner requirement missing",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),A;C;E;H;I,False,9,21.089497,43.512868,59.077231,0.679209,124.358805,DECRYPT_SUCCESS,False,Recovered GT element differs from original
+44,"Stress 10 - nested AND/OR, inner requirement missing",((A or B) and ((C and D) or (E and (F or G)))) and (H or (I and J)),A;C;E;H;I,False,10,22.472428,44.544690,55.144863,0.781037,122.943018,DECRYPT_SUCCESS,False,Recovered GT element differs from original
